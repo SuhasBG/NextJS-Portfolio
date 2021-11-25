@@ -1,14 +1,29 @@
-import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
+import Link from "next/link";
+import React from "react";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+import {
+  Container,
+  Div1,
+  Div2,
+  Div3,
+  NavLink,
+  SocialIcons,
+} from "./HeaderStyles";
 
 const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: 'flex', alignItems: 'center', color: "white" }}>
-          <img src="/logo.svg" height={40} width={40} /> <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }} >Vipul Jha</span>
+        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
+          {/* <img src="/images/mylogo.png" height={40} width={40} />{" "} */}
+          <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }}>
+            Suhas B G
+          </span>
         </a>
       </Link>
     </Div1>
@@ -27,11 +42,6 @@ const Header = () => (
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link>
-      </li>
-      <li>
-        <a href="https://blog.vipuljha.com">
-          <NavLink>Blog</NavLink>
-        </a>
       </li>
     </Div2>
     <Div3>
