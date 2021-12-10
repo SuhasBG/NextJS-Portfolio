@@ -9,6 +9,10 @@ export const Container = styled.div`
   padding: 1rem;
   padding-top: 2rem;
   z-index: var(-z--fixed);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  // background: #000;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -16,6 +20,7 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
+    position: sticky;
   }
 `;
 export const Div1 = styled.div`
